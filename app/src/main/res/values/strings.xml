@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LoginAPP</string>
+    <string name="login">LOGIN</string>
+    <string name="email">E-Mail Address</string>
+    <string name="pswd">Password</string>
+    <string name="loginbtn">LOGIN</string>
+    <string name="or">or</string>
+    <string name="dp">Dont you remember your Password</string>
+</resources>
