@@ -12,13 +12,15 @@ public class MainActivity extends AppCompatActivity {
     private EditText email;
     private EditText password;
     private Button login;
+    private Button signup;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        email = (EditText)findViewById(R.id.editText1);
-        password = (EditText)findViewById(R.id.editText2);
+        email = (EditText)findViewById(R.id.editxt2);
+        password = (EditText)findViewById(R.id.password2);
         login = (Button)findViewById(R.id.button);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,13 +28,26 @@ public class MainActivity extends AppCompatActivity {
                 validate(email.getText().toString(), password.getText().toString());
             }
         });
+        signup = (Button)findViewById(R.id.button2);
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                validate();
+            }
+        });
+
     }
 
     private void validate(String email, String password){
         //noinspection StatementWithEmptyBody
         if (email.equals("Admin")&& password.equals("1234"));
-        {
-            Toast.makeText(getApplicationContext(), "WELCOME", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+        startActivity(intent);
         }
-        }
+
+    private void validate(){
+        Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
+        startActivity(intent);
+
+    }
 }
