@@ -11,4 +11,13 @@
     <string name="facebook">facebook</string>
     <string name="signup">SignUp</string>
     <string name="welcome">WELCOME</string>
+    <string name="ca">Create an Account</string>
+    <string name="username">Select an Username</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="account">Do you have an account ?</string>
+    <string name="loginup">Login</string>
+    <string name="inputmail">Input Email</string>
+    <string name="inputname">Input Username</string>
+    <string name="inputpwd">Input Password</string>
+    <string name="namaste">Namaste</string>
 </resources>
